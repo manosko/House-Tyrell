@@ -6,11 +6,12 @@ export default class Pinpad extends React.Component {
     super(props);
     this.state = {
       pinpadOptions: [],
-    }
+    };
   }
 
   componentDidMount() {
-    this.setState({pinpadOptions: this.props.pinpadOptions})
+    // TODO: change this to instantiate based on options: pin, cash, [other?]
+    this.setState({ pinpadOptions: this.props.pinpadOptions });
   }
 
   render() {
