@@ -38,16 +38,13 @@ export default class OrderKitchenView extends React.Component {
             <div>{food[0]}</div>
             <div>
             {food[1].length > 0 &&
-              <h4>
-                Without
                 <ul>
                 {food[1].map(exclude =>
-                  <li>
+                  <li style={{textDecoration: 'line-through'}}>
                     {exclude}
                   </li>
                 )}
                 </ul>
-              </h4>
             }</div>
           </div>
         )}
